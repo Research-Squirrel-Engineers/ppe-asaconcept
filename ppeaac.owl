@@ -141,6 +141,7 @@
 
     <owl:Class rdf:about="http://archaeology.link/ontology#Actor">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
     </owl:Class>
     
 
@@ -149,6 +150,7 @@
 
     <owl:Class rdf:about="http://archaeology.link/ontology#ActorEntity">
         <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#Actor"/>
+        <rdfs:label xml:lang="en">Actor Entity</rdfs:label>
     </owl:Class>
     
 
@@ -157,6 +159,7 @@
 
     <owl:Class rdf:about="http://archaeology.link/ontology#ChiefPotter">
         <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#ActorEntity"/>
+        <rdfs:label xml:lang="en">Chief Potter</rdfs:label>
     </owl:Class>
     
 
@@ -165,6 +168,7 @@
 
     <owl:Class rdf:about="http://archaeology.link/ontology#CooperationPotter">
         <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#ActorEntity"/>
+        <rdfs:label xml:lang="en">Cooperation Potter</rdfs:label>
     </owl:Class>
     
 
@@ -173,6 +177,7 @@
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+        <rdfs:label xml:lang="en">CRM Entity</rdfs:label>
     </owl:Class>
     
 
@@ -181,6 +186,7 @@
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
     </owl:Class>
     
 
@@ -189,6 +195,7 @@
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E53_Place">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
     </owl:Class>
     
 
@@ -197,6 +204,7 @@
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
     </owl:Class>
     
 
@@ -205,6 +213,7 @@
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E5_Event">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
     </owl:Class>
     
 
@@ -213,6 +222,7 @@
 
     <owl:Class rdf:about="http://www.opengis.net/ont/geosparql#SpatialObject">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <rdfs:label xml:lang="en">Spatial Object</rdfs:label>
     </owl:Class>
     
 
@@ -221,6 +231,7 @@
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
     </owl:Class>
     
 
@@ -229,6 +240,7 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
         <rdfs:subClassOf rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+        <rdfs:label xml:lang="en">Entity</rdfs:label>
     </owl:Class>
     
 
@@ -237,6 +249,7 @@
 
     <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Location">
         <rdfs:subClassOf rdf:resource="https://pleiades.stoa.org/places/vocab#Place"/>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
     </owl:Class>
     
 
@@ -245,6 +258,7 @@
 
     <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Name">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
+        <rdfs:label xml:lang="en">Name</rdfs:label>
     </owl:Class>
     
 
@@ -253,13 +267,30 @@
 
     <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Place">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
     </owl:Class>
     
 
 
     <!-- https://www.w3.org/2000/01/rdf-schema#Resource -->
 
-    <owl:Class rdf:about="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <owl:Class rdf:about="https://www.w3.org/2000/01/rdf-schema#Resource">
+        <rdfs:label xml:lang="en">Resource</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:label xml:lang="en">Thing</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
