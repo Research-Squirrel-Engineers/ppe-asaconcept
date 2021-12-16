@@ -52,6 +52,7 @@
     <!-- https://pleiades.stoa.org/places/vocab#hasLocation -->
 
     <owl:ObjectProperty rdf:about="https://pleiades.stoa.org/places/vocab#hasLocation">
+        <rdfs:domain rdf:resource="http://squirrel.link/ontology#Activity"/>
         <rdfs:domain rdf:resource="https://pleiades.stoa.org/places/vocab#Place"/>
         <rdfs:range rdf:resource="https://pleiades.stoa.org/places/vocab#Location"/>
         <rdfs:label xml:lang="en">has location</rdfs:label>
@@ -141,7 +142,7 @@
 
     <owl:Class rdf:about="http://archaeology.link/ontology#Actor">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
-        <rdfs:label xml:lang="en">Actor</rdfs:label>
+        <rdfs:label xml:lang="en">Actor as a Concept</rdfs:label>
     </owl:Class>
     
 
@@ -173,6 +174,42 @@
     
 
 
+    <!-- http://squirrel.link/ontology#Activity -->
+
+    <owl:Class rdf:about="http://squirrel.link/ontology#Activity">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://squirrel.link/ontology#Event -->
+
+    <owl:Class rdf:about="http://squirrel.link/ontology#Event">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://squirrel.link/ontology#EventConcept -->
+
+    <owl:Class rdf:about="http://squirrel.link/ontology#EventConcept">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
+        <rdfs:label xml:lang="en">Event as a Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://squirrel.link/ontology#Period -->
+
+    <owl:Class rdf:about="http://squirrel.link/ontology#Period">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E2_TemporalEntity"/>
+        <rdfs:label xml:lang="en">Time Period as a Concept</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
@@ -182,11 +219,29 @@
     
 
 
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E2_TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E2_TemporalEntity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:label xml:lang="en">Temporal Entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.cidoc-crm.org/cidoc-crm/E39_Actor -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:label xml:lang="en">Actor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E4_Period -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E4_Period">
+        <rdfs:subClassOf rdf:resource="http://squirrel.link/ontology#Period"/>
+        <rdfs:label xml:lang="en">Period</rdfs:label>
     </owl:Class>
     
 
@@ -214,6 +269,15 @@
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E5_Event">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <rdfs:label xml:lang="en">Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E7_Activity -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">
+        <rdfs:subClassOf rdf:resource="http://squirrel.link/ontology#EventConcept"/>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
     </owl:Class>
     
 
@@ -267,7 +331,7 @@
 
     <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Place">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
-        <rdfs:label xml:lang="en">Place</rdfs:label>
+        <rdfs:label xml:lang="en">Place (as a Concept)</rdfs:label>
     </owl:Class>
     
 
