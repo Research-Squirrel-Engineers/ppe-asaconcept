@@ -238,7 +238,6 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
   <section id="classes">
     <h2>Classes <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
     <ul class="hlist">
-      <li><a href="http://ontology.ogham.link/Place">http://ontology.ogham.link/Place</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a></li>
@@ -246,27 +245,11 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a></li>
       <li><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></li>
       <li><a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a></li>
+      <li><a href="https://pleiades.stoa.org/places/vocab#Location">https://pleiades.stoa.org/places/vocab#Location</a></li>
+      <li><a href="https://pleiades.stoa.org/places/vocab#Name">https://pleiades.stoa.org/places/vocab#Name</a></li>
       <li><a href="https://pleiades.stoa.org/places/vocab#Place">https://pleiades.stoa.org/places/vocab#Place</a></li>
       <li><a href="https://www.w3.org/2000/01/rdf-schema#Resource">https://www.w3.org/2000/01/rdf-schema#Resource</a></li>
     </ul>
-    <div class="entity class" id="Place">
-        <h3>
-          Place<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Place" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
-        </h3>
-        <table>
-            <tr>
-                <th>URI</th>
-                <td><code>http://ontology.ogham.link/Place</code></td>
-            </tr>
-            <tr>
-                <th>Super-classes</th>
-                <td>
-                    <a href="https://pleiades.stoa.org/places/vocab#Place">https://pleiades.stoa.org/places/vocab#Place</a><sup class="sup-c" title="class">c</sup><br/>
-                </td>
-            </tr>
-        </table>
-    </div>
     <div class="entity class" id="E1_CRM_Entity">
         <h3>
           E1_CRM_Entity<sup title="class" class="sup-c">c</sup>
@@ -394,9 +377,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">crm:E5_Event</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://pleiades.stoa.org/places/vocab#Name">https://pleiades.stoa.org/places/vocab#Name</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -425,10 +409,46 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Place1">
+    <div class="entity class" id="Location">
+        <h3>
+          Location<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Location" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://pleiades.stoa.org/places/vocab#Location</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="https://pleiades.stoa.org/places/vocab#Place">https://pleiades.stoa.org/places/vocab#Place</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Name">
+        <h3>
+          Name<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Name" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>https://pleiades.stoa.org/places/vocab#Name</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Place">
         <h3>
           Place<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Place1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Place" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -444,7 +464,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://ontology.ogham.link/Place">http://ontology.ogham.link/Place</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="https://pleiades.stoa.org/places/vocab#Location">https://pleiades.stoa.org/places/vocab#Location</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
