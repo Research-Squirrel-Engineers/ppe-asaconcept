@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/florianthiery/ontologies/2021/11/untitled-ontology-142#"
-     xml:base="http://www.semanticweb.org/florianthiery/ontologies/2021/11/untitled-ontology-142"
+<rdf:RDF xmlns="http://squirrel.link/ontology#"
+     xml:base="http://squirrel.link/ontology"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/florianthiery/ontologies/2021/11/untitled-ontology-142"/>
+    <owl:Ontology rdf:about="http://squirrel.link/ontology#">
+        <rdfs:label xml:lang="en">Squirrel Ontology</rdfs:label>
+    </owl:Ontology>
     
 
 
@@ -18,6 +20,38 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://archaeology.link/ontology#Actor -->
+
+    <owl:Class rdf:about="http://archaeology.link/ontology#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeology.link/ontology#ActorEntity -->
+
+    <owl:Class rdf:about="http://archaeology.link/ontology#ActorEntity">
+        <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeology.link/ontology#ChiefPotter -->
+
+    <owl:Class rdf:about="http://archaeology.link/ontology#ChiefPotter">
+        <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#ActorEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://archaeology.link/ontology#CooperationPotter -->
+
+    <owl:Class rdf:about="http://archaeology.link/ontology#CooperationPotter">
+        <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#ActorEntity"/>
+    </owl:Class>
     
 
 
@@ -40,6 +74,14 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/E53_Place -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E53_Place">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.cidoc-crm.org/cidoc-crm/E55_Type -->
+
+    <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E55_Type">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:Class>
     
@@ -88,7 +130,7 @@
     <!-- https://pleiades.stoa.org/places/vocab#Name -->
 
     <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Name">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E55_Type"/>
     </owl:Class>
     
 
