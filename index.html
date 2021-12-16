@@ -244,11 +244,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="http://archaeology.link/ontology#ActorEntity">al:ActorEntity</a></li>
       <li><a href="http://archaeology.link/ontology#ChiefPotter">al:ChiefPotter</a></li>
       <li><a href="http://archaeology.link/ontology#CooperationPotter">al:CooperationPotter</a></li>
+      <li><a href="#Activity">Activity</a></li>
+      <li><a href="#Event">Event</a></li>
+      <li><a href="#EventasaConcept">Event as a Concept</a></li>
+      <li><a href="#TimePeriodasaConcept">Time Period as a Concept</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">crm:E1_CRM_Entity</a></li>
+      <li><a href="http://www.cidoc-crm.org/cidoc-crm/E2_TemporalEntity">crm:E2_TemporalEntity</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a></li>
+      <li><a href="http://www.cidoc-crm.org/cidoc-crm/E4_Period">crm:E4_Period</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a></li>
       <li><a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">crm:E5_Event</a></li>
+      <li><a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">crm:E7_Activity</a></li>
       <li><a href="http://www.opengis.net/ont/geosparql#SpatialObject">geosparql:SpatialObject</a></li>
       <li><a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a></li>
       <li><a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a></li>
@@ -257,10 +264,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
       <li><a href="https://pleiades.stoa.org/places/vocab#Place">pleiades:Place</a></li>
       <li><a href="https://www.w3.org/2000/01/rdf-schema#Resource">https://www.w3.org/2000/01/rdf-schema#Resource</a></li>
     </ul>
-    <div class="entity class" id="Actor">
+    <div class="entity class" id="ActorasaConcept">
         <h3>
-          Actor<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Actor" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Actor as a Concept<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#ActorasaConcept" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -342,6 +349,96 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
+    <div class="entity class" id="Activity">
+        <h3>
+          Activity<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Activity" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://squirrel.link/ontology#Activity</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">crm:E7_Activity</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>In domain of</th>
+                <td>
+                    <a href="https://pleiades.stoa.org/places/vocab#hasLocation">pleiades:hasLocation</a><sup class="sup-op" title="object property">op</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Event">
+        <h3>
+          Event<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Event" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://squirrel.link/ontology#Event</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E4_Period">crm:E4_Period</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="EventasaConcept">
+        <h3>
+          Event as a Concept<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#EventasaConcept" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://squirrel.link/ontology#EventConcept</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">crm:E5_Event</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E7_Activity">crm:E7_Activity</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="TimePeriodasaConcept">
+        <h3>
+          Time Period as a Concept<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TimePeriodasaConcept" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://squirrel.link/ontology#Period</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E2_TemporalEntity">crm:E2_TemporalEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E4_Period">crm:E4_Period</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
     <div class="entity class" id="CRMEntity">
         <h3>
           CRM Entity<sup title="class" class="sup-c">c</sup>
@@ -366,10 +463,34 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="E39_Actor">
+    <div class="entity class" id="TemporalEntity">
+        <h3>
+          Temporal Entity<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#TemporalEntity" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/E2_TemporalEntity</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#TimePeriodasaConcept">Time Period as a Concept</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Actor">
         <h3>
           Actor<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#E39_Actor" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Actor" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -386,6 +507,30 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Sub-classes</th>
                 <td>
                     <a href="http://archaeology.link/ontology#Actor">al:Actor</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="Period">
+        <h3>
+          Period<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Period" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/E4_Period</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#TimePeriodasaConcept">Time Period as a Concept</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#Event">Event</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -438,10 +583,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Event">
+    <div class="entity class" id="E5_Event">
         <h3>
           Event<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Event" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#E5_Event" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -452,6 +597,36 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Super-classes</th>
                 <td>
                     <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#EventasaConcept">Event as a Concept</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity class" id="E7_Activity">
+        <h3>
+          Activity<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#E7_Activity" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+        </h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://www.cidoc-crm.org/cidoc-crm/E7_Activity</code></td>
+            </tr>
+            <tr>
+                <th>Super-classes</th>
+                <td>
+                    <a href="#EventasaConcept">Event as a Concept</a><sup class="sup-c" title="class">c</sup><br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Sub-classes</th>
+                <td>
+                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
         </table>
@@ -499,17 +674,18 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Sub-classes</th>
                 <td>
-                    <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">crm:E5_Event</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/E39_Actor">crm:E39_Actor</a><sup class="sup-c" title="class">c</sup><br/>
-                    <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a><sup class="sup-c" title="class">c</sup><br/>
                     <a href="http://www.cidoc-crm.org/cidoc-crm/E55_Type">crm:E55_Type</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E2_TemporalEntity">crm:E2_TemporalEntity</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E53_Place">crm:E53_Place</a><sup class="sup-c" title="class">c</sup><br/>
+                    <a href="http://www.cidoc-crm.org/cidoc-crm/E5_Event">crm:E5_Event</a><sup class="sup-c" title="class">c</sup><br/>
                 </td>
             </tr>
             <tr>
                 <th>In range of</th>
                 <td>
-                    <a href="https://pleiades.stoa.org/places/vocab#during">pleiades:during</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="https://pleiades.stoa.org/places/vocab#hasFeatureType">pleiades:hasFeatureType</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="https://pleiades.stoa.org/places/vocab#during">pleiades:during</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -557,10 +733,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://pleiades.stoa.org/places/vocab#during">pleiades:during</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="https://pleiades.stoa.org/places/vocab#start_date">pleiades:start_date</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="https://pleiades.stoa.org/places/vocab#end_date">pleiades:end_date</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="https://pleiades.stoa.org/places/vocab#hasFeatureType">pleiades:hasFeatureType</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="https://pleiades.stoa.org/places/vocab#during">pleiades:during</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -590,9 +766,9 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
-                    <a href="https://pleiades.stoa.org/places/vocab#nameRomanized">pleiades:nameRomanized</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="https://pleiades.stoa.org/places/vocab#nameAttested">pleiades:nameAttested</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="https://pleiades.stoa.org/places/vocab#during">pleiades:during</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="https://pleiades.stoa.org/places/vocab#nameAttested">pleiades:nameAttested</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
+                    <a href="https://pleiades.stoa.org/places/vocab#nameRomanized">pleiades:nameRomanized</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                 </td>
             </tr>
             <tr>
@@ -603,10 +779,10 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             </tr>
         </table>
     </div>
-    <div class="entity class" id="Place1">
+    <div class="entity class" id="Place(asaConcept)">
         <h3>
-          Place<sup title="class" class="sup-c">c</sup>
-          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Place1" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
+          Place (as a Concept)<sup title="class" class="sup-c">c</sup>
+          <span style="float:right; margin-right:10px; font-size:smaller;"><a href="#Place(asaConcept)" title="fragment link to here">#</a> <a href="#classes" title="Classes Index">Classes</a></span>
         </h3>
         <table>
             <tr>
@@ -628,11 +804,11 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>In domain of</th>
                 <td>
+                    <a href="https://pleiades.stoa.org/places/vocab#hasFeatureType">pleiades:hasFeatureType</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="https://pleiades.stoa.org/places/vocab#hasLocation">pleiades:hasLocation</a><sup class="sup-op" title="object property">op</sup><br/>
+                    <a href="https://pleiades.stoa.org/places/vocab#start_date">pleiades:start_date</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
                     <a href="https://pleiades.stoa.org/places/vocab#hasName">pleiades:hasName</a><sup class="sup-op" title="object property">op</sup><br/>
                     <a href="https://pleiades.stoa.org/places/vocab#end_date">pleiades:end_date</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="https://pleiades.stoa.org/places/vocab#start_date">pleiades:start_date</a><sup class="sup-dp" title="datatype property">dp</sup><br/>
-                    <a href="https://pleiades.stoa.org/places/vocab#hasFeatureType">pleiades:hasFeatureType</a><sup class="sup-op" title="object property">op</sup><br/>
                 </td>
             </tr>
         </table>
@@ -682,8 +858,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://pleiades.stoa.org/places/vocab#Location">pleiades:Location</a><sup class="sup-c" title="class">c</sup>
                     <a href="https://pleiades.stoa.org/places/vocab#Name">pleiades:Name</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://pleiades.stoa.org/places/vocab#Location">pleiades:Location</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -737,6 +913,7 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
                 <th>Domain(s)</th>
                 <td>
                     <a href="https://pleiades.stoa.org/places/vocab#Place">pleiades:Place</a><sup class="sup-c" title="class">c</sup>
+                    <a href="#Activity">Activity</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
@@ -798,8 +975,8 @@ EAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ
             <tr>
                 <th>Domain(s)</th>
                 <td>
-                    <a href="https://pleiades.stoa.org/places/vocab#Place">pleiades:Place</a><sup class="sup-c" title="class">c</sup>
                     <a href="https://pleiades.stoa.org/places/vocab#Location">pleiades:Location</a><sup class="sup-c" title="class">c</sup>
+                    <a href="https://pleiades.stoa.org/places/vocab#Place">pleiades:Place</a><sup class="sup-c" title="class">c</sup>
                 </td>
             </tr>
             <tr>
