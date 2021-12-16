@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:pleiades="https://pleiades.stoa.org/places/vocab#">
     <owl:Ontology rdf:about="http://squirrel.link/ontology#">
-        <rdfs:label xml:lang="en">Squirrel Ontology</rdfs:label>
+        <rdfs:label xml:lang="en">The Place-Persons-Events Squirrel Ontology</rdfs:label>
     </owl:Ontology>
     
 
