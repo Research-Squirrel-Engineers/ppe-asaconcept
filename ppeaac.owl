@@ -21,14 +21,6 @@
     
 
 
-    <!-- http://ontology.ogham.link/Place -->
-
-    <owl:Class rdf:about="http://ontology.ogham.link/Place">
-        <rdfs:subClassOf rdf:resource="https://pleiades.stoa.org/places/vocab#Place"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E1_CRM_Entity">
@@ -81,6 +73,22 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
         <rdfs:subClassOf rdf:resource="https://www.w3.org/2000/01/rdf-schema#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- https://pleiades.stoa.org/places/vocab#Location -->
+
+    <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Location">
+        <rdfs:subClassOf rdf:resource="https://pleiades.stoa.org/places/vocab#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- https://pleiades.stoa.org/places/vocab#Name -->
+
+    <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Name">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:Class>
     
 
