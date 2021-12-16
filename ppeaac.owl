@@ -142,7 +142,7 @@
 
     <owl:Class rdf:about="http://archaeology.link/ontology#Actor">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E39_Actor"/>
-        <rdfs:label xml:lang="en">Actor as a Concept</rdfs:label>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
     </owl:Class>
     
 
@@ -150,7 +150,7 @@
     <!-- http://archaeology.link/ontology#ActorEntity -->
 
     <owl:Class rdf:about="http://archaeology.link/ontology#ActorEntity">
-        <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#Actor"/>
+        <rdfs:subClassOf rdf:resource="http://squirrel.link/ontology#ActorConcept"/>
         <rdfs:label xml:lang="en">Actor Entity</rdfs:label>
     </owl:Class>
     
@@ -159,7 +159,7 @@
     <!-- http://archaeology.link/ontology#ChiefPotter -->
 
     <owl:Class rdf:about="http://archaeology.link/ontology#ChiefPotter">
-        <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#ActorEntity"/>
+        <rdfs:subClassOf rdf:resource="http://squirrel.link/ontology#ActorEntity"/>
         <rdfs:label xml:lang="en">Chief Potter</rdfs:label>
     </owl:Class>
     
@@ -168,7 +168,7 @@
     <!-- http://archaeology.link/ontology#CooperationPotter -->
 
     <owl:Class rdf:about="http://archaeology.link/ontology#CooperationPotter">
-        <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#ActorEntity"/>
+        <rdfs:subClassOf rdf:resource="http://squirrel.link/ontology#ActorEntity"/>
         <rdfs:label xml:lang="en">Cooperation Potter</rdfs:label>
     </owl:Class>
     
@@ -178,7 +178,25 @@
 
     <owl:Class rdf:about="http://squirrel.link/ontology#Activity">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E7_Activity"/>
-        <rdfs:label xml:lang="en">Activity</rdfs:label>
+        <rdfs:label xml:lang="en">Activity (Event Entity)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://squirrel.link/ontology#ActorConcept -->
+
+    <owl:Class rdf:about="http://squirrel.link/ontology#ActorConcept">
+        <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#Actor"/>
+        <rdfs:label xml:lang="en">Actor (Concept)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://squirrel.link/ontology#ActorEntity -->
+
+    <owl:Class rdf:about="http://squirrel.link/ontology#ActorEntity">
+        <rdfs:subClassOf rdf:resource="http://archaeology.link/ontology#ActorEntity"/>
+        <rdfs:label xml:lang="en">Actor Entity (Actor Entity)</rdfs:label>
     </owl:Class>
     
 
@@ -187,7 +205,7 @@
 
     <owl:Class rdf:about="http://squirrel.link/ontology#Event">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E4_Period"/>
-        <rdfs:label xml:lang="en">Event</rdfs:label>
+        <rdfs:label xml:lang="en">Event (Period Entity)</rdfs:label>
     </owl:Class>
     
 
@@ -196,16 +214,34 @@
 
     <owl:Class rdf:about="http://squirrel.link/ontology#EventConcept">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E5_Event"/>
-        <rdfs:label xml:lang="en">Event as a Concept</rdfs:label>
+        <rdfs:label xml:lang="en">Event (Concept)</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://squirrel.link/ontology#Period -->
+    <!-- http://squirrel.link/ontology#Location -->
 
-    <owl:Class rdf:about="http://squirrel.link/ontology#Period">
+    <owl:Class rdf:about="http://squirrel.link/ontology#Location">
+        <rdfs:subClassOf rdf:resource="https://pleiades.stoa.org/places/vocab#Location"/>
+        <rdfs:label xml:lang="en">Location (Place Entity)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://squirrel.link/ontology#PeriodConcept -->
+
+    <owl:Class rdf:about="http://squirrel.link/ontology#PeriodConcept">
         <rdfs:subClassOf rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E2_TemporalEntity"/>
-        <rdfs:label xml:lang="en">Time Period as a Concept</rdfs:label>
+        <rdfs:label xml:lang="en">Time Period (Concept)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://squirrel.link/ontology#PlaceConcept -->
+
+    <owl:Class rdf:about="http://squirrel.link/ontology#PlaceConcept">
+        <rdfs:subClassOf rdf:resource="https://pleiades.stoa.org/places/vocab#Place"/>
+        <rdfs:label xml:lang="en">Place (Concept)</rdfs:label>
     </owl:Class>
     
 
@@ -240,7 +276,7 @@
     <!-- http://www.cidoc-crm.org/cidoc-crm/E4_Period -->
 
     <owl:Class rdf:about="http://www.cidoc-crm.org/cidoc-crm/E4_Period">
-        <rdfs:subClassOf rdf:resource="http://squirrel.link/ontology#Period"/>
+        <rdfs:subClassOf rdf:resource="http://squirrel.link/ontology#PeriodConcept"/>
         <rdfs:label xml:lang="en">Period</rdfs:label>
     </owl:Class>
     
@@ -312,7 +348,7 @@
     <!-- https://pleiades.stoa.org/places/vocab#Location -->
 
     <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Location">
-        <rdfs:subClassOf rdf:resource="https://pleiades.stoa.org/places/vocab#Place"/>
+        <rdfs:subClassOf rdf:resource="http://squirrel.link/ontology#PlaceConcept"/>
         <rdfs:label xml:lang="en">Location</rdfs:label>
     </owl:Class>
     
@@ -331,7 +367,7 @@
 
     <owl:Class rdf:about="https://pleiades.stoa.org/places/vocab#Place">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
-        <rdfs:label xml:lang="en">Place (as a Concept)</rdfs:label>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
     </owl:Class>
     
 
