@@ -1,4 +1,4 @@
-# ppe-asaconcept
+# things as a concept
 
 places, persons, events/time as concepts
 
